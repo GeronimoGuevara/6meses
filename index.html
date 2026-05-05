@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gero & Lu · 6 Meses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Partículas de fondo -->
+    <canvas id="particles"></canvas>
+
+    <!-- Música -->
+    <div class="music-btn" id="musicBtn" title="Reproducir música">
+      <span class="music-icon">♪</span>
+      <audio id="bgMusic" loop>
+        <!-- Podés reemplazar este src con tu canción favorita -->
+        <source src="assets/musica.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+
+    <main class="page">
+      <!-- HEADER -->
+      <header class="header reveal">
+        <p class="header-label">un día especial</p>
+        <h1 class="header-date">12 · 05 · 2026</h1>
+        <p class="header-sub">6 meses juntos</p>
+        <div class="header-divider">
+          <span>✦</span>
+        </div>
+      </header>
+
+      <!-- POLAROID -->
+      <section class="polaroid-section reveal">
+        <div class="polaroid">
+          <div class="polaroid-img-wrap">
+            <img src="assets/foto.jpg" alt="Gero & Lu" class="polaroid-img" />
+            <!-- Placeholder si no hay foto -->
+            <div class="polaroid-placeholder">
+              <span>♥</span>
+            </div>
+          </div>
+          <p class="polaroid-caption">Gero &amp; Lu</p>
+        </div>
+      </section>
+
+      <!-- TEXTO: HILO ROJO -->
+      <section class="story-section reveal">
+        <div class="story-deco">— ✦ —</div>
+        <p class="story-text">
+          En una leyenda japonesa, dicen que dos personas destinadas a conocerse
+          están unidas por un <em>hilo rojo invisible</em>. Puede estirarse,
+          enredarse o perderse entre los caminos de la vida… pero nunca se
+          rompe.
+        </p>
+        <p class="story-text story-text--closing">
+          Me alegra que mi hilo rojo me haya llevado hasta ti.
+        </p>
+      </section>
+
+      <!-- VIDEO -->
+      <section class="video-section reveal">
+        <div class="video-wrap">
+          <video id="myVideo" preload="metadata" playsinline>
+            <source src="assets/video.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+          </video>
+          <button class="play-btn" id="playBtn" aria-label="Reproducir video">
+            <svg
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="30"
+                cy="30"
+                r="29"
+                stroke="white"
+                stroke-width="1.5"
+                fill="rgba(255,255,255,0.1)"
+              />
+              <polygon points="24,18 44,30 24,42" fill="white" />
+            </svg>
+          </button>
+          <div class="video-overlay" id="videoOverlay"></div>
+        </div>
+        <p class="video-caption">nuestro momento favorito</p>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer reveal">
+        <p class="footer-text">con amor, siempre</p>
+        <p class="footer-text">Gero</p>
+        <p class="footer-hearts">♥ ♥ ♥</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
